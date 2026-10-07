@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+         }
+         
+          header{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            
+            background-color: black;
+            color: aliceblue;
+            align-items: center;
+            justify-content: space-around;
+            
+          } 
+ 
+             body{
+              background-color: black;
+                
+             }
+
+
+           .first h1{
+                 margin-right: 450px;
+                 position: relative;
+                 right: 135px;
+                 top: 7px;
+                 
+                 background-color: rgb(32, 228, 32);
+                 width: 55px;
+                 height: 45px; 
+                 text-align: center;
+                 border-radius: 50%;
+                 color: black;
+                 margin-left: 62px;
+                 
+           }
+        
+            .first p{
+                  position: relative;
+                  bottom: 25px;
+                  right: 12px;
+            }
+
+            .second a{
+              
+                text-decoration: none;
+                color: white;
+                margin-right: 45px;
+                margin-left: 10px;
+                
+
+
+            }
+
+            a:hover{
+              color: rgb(26, 189, 26);
+
+            }
+
+            a:active{
+              color: blue;
+            }
+
+
+           .container{
+             width: 90%;
+             height: 100vh;
+             background-color : black;
+           }
+
+           .part2 img{
+               width: 320px;
+               position: relative;
+               left: 61%;
+               bottom: 766px;
+               
+           }  
+
+           .part2 {
+              color: white ;
+              position: relative;
+              top: 155px;
+              left: 55px;
+              font-size: 20px;
+           }
+
+           .part2 .circle1{
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                background-color: white;
+                position: relative;
+                left: 60%;
+                bottom: 30px;
+                right: 30px;
+                padding-right: 40px;
+                
+           }
+
+             .part2 .circle2{
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                background-color: rgb(18, 231, 28);
+                position: relative;
+                left: 54%;
+                bottom: 555px;
+           }
+           
+           span{
+             color: rgb(5, 182, 5);
+           }
+          
+           .part2 button{
+             margin-top: 30px;
+             width: 150px;
+             height: 45px;
+             background-color: rgb(12, 192, 12);
+             border: none;
+             color: white;
+             font-weight: bolder;
+           }
+  
+           .container1{
+             
+             
+           }
+
+           .part4 img{
+               width: 300px;
+               position: relative;
+               bottom: 350px;
+               left: 55px;
+               color: white;
+               
+               
+           }
+
+           
+             
+           .part3 button{
+             width: 100px;
+             height: 40px;
+             color: white;
+             background-color: rgb(36, 212, 36);
+             border: none;
+             margin-top: 15px;
+           }
+
+           .part3 h1{
+             color: white;
+             font-size: 42px;
+             margin-bottom: 15px;
+
+           }
+
+           .part3 p {
+             color: white;
+           }
+           .part3{
+             position: relative;
+             bottom: 45px;
+             font-size: 18px;
+             width: 680px;
+             left: 32%;
+             bottom: 658px; 
+           }
+  
+          .part3 strong{
+            color: rgb(19, 194, 19);
+          } 
+            
+           .part5{
+             color: white;
+             bottom: 45px;
+             font-size: 18px;
+             width: 680px;
+             position: relative;
+             left: 43%;
+             bottom: 450px;
+
+          }
+
+         .part5 h1{
+           font-size: 40px;
+         }
+
+         .part5 p{
+           position: relative;
+           right: 9%;
+           margin-top: 5px;
+           font-size: 20px;
+         }
+
+           .part5 strong{
+            color: rgb(19, 194, 19);
+          }
+           
+       .icons{
+          display: flex;
+          gap:28px;
+          
+       }
+
+       .part6{
+         display: flex;
+         flex-direction: column;  
+         justify-content: space-around;
+         align-items: center;
+         color: white;
+         position: relative;
+         bottom: 230px; 
+         left: 25%;
+         
+       }
+
+
+      
+
+       .part6 h1 {
+         font-size: px;
+         margin-left: 20px;
+       }
+
+        .part6 p {
+         font-size: 15px;
+         margin-top: 15px;
+         
+        
+       }
+      
+         .part6 button {
+          margin-top: 25px;
+          width: 45%;
+          height: 30px;
+          background-color: green;
+          color:white;
+          border: none;
+          
+       }
+   
+
+       .fa-laptop{
+           font-size: 30px;
+            color: white;
+            background-color: rgb(33, 189, 33);
+            position: relative;
+            padding-top: 25px;
+            width: 80px;
+            text-align: center;
+            height: 80px;
+            border-radius: 50px;
+            margin-right: 100px;
+       }
+ 
+
+       .fa-umbrella{
+            font-size: 30px;
+            color: white;
+            background-color: rgb(33, 189, 33);
+            position: relative;
+            padding-top: 25px;
+            width: 80px;
+            text-align: center;
+            height: 80px;
+            border-radius: 50px;
+            margin-right: 5px;
+
+       }
+
+       .com{
+          width: 200px;
+          height: 60px;
+          background-color: black;
+          border-radius: 50%;
+          border: 5px solid rgb(0, 255, 8);
+          position: relative;
+          left: 110px;
+          bottom: 80px;
+          
+       }
+
+        .p1{
+           margin-right: 73px;
+       }
+
+       .rrr{
+        position: relative;
+        right: 55px;
+ 
+       }
+
+ .part6 .fa-address-card{
+            font-size: 35px;
+            color: white;
+            background-color: rgb(33, 189, 33);
+            position: relative;
+            padding-top: 25px;
+            width: 80px;
+            text-align: center;
+            height: 80px;
+            border-radius: 50px;
+            margin-left: 1%;
+            
+       }
+
+      .ddd{
+
+        position: relative;
+        bottom: 5px;
+        left: 40px ;
+      }
+
+
+      .item:first-child
+       
+    </style>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="first">
+               <h1>H</h1>
+               <p>TECH</p>
+            </div>
+        </nav>
+
+     <nav>
+        <div class="second">
+          <a href="">HOME</a>
+          <a href="">ABOUT</a>
+          <a href="">SERVICE</a>
+          <a href="">CONTACT</a>
+        </div>
+     </nav> 
+    </header>
+ <div class="container">
+      <div class="part2">
+        <h1>I'M Web Designer</h1>
+        <h1><span>Ibrahim Bolakale</span></h1>  
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+        <button>Learn More</button> 
+    </div>
+
+      <div class="part2">
+         <div class="circle1"></div>
+         <div class="circle2"></div>
+         <img src="image/uuu.png" alt="">
+    </div>
+
+
+
+    <div class="container1">
+
+       <div class="part4">
+          <div class="com"></div>
+
+         <img src="image/pic2.png" alt="">
+    </div>
+    
+      <div class="part3">
+        <h1><strong>PROFESSIONAL</strong> WEB DESIGNER</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione magnam ad quod dignissimos, suscipit molestias eveniet animi maxime alias doloribus in voluptatibus facilis dolorem delectus! Quod similique odio quidem deleniti temporibus accusantium doloribus ea aperiam officia consequuntur aspernatur debitis totam nam qui, eveniet incidunt nesciunt fuga facilis dolor modi iusto possimus magnam? Optio modi fugit odit velit quo quibusdam dolores accusantium omnis, maiores sunt obcaecati? Iste, molestias? Officiis nobis iusto placeat ullam architecto odio tenetur, vero rat</p>
+
+        <button>Learn More</button>
+    </div>
+
+    <div class="part5">
+      <h1>OUR<strong>SERVICES</strong></h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+
+   <div class="icons">
+
+     <div class="part6">
+      
+      <i class="fa-solid fa-laptop"></i>
+
+      <div class="rrr">
+          <h1>Web Design</h1>
+      </div>
+      
+      <div class="p1">
+     <p>
+      Lorem, ipsum dolor sit amet<br> consectetur adipisicing elit. <br›
+      Possimus, nostrum ullam. Aperiam iusto sunt ducimus. <br><br>
+      Lorem ipsum dolor sit amet.<br><br>
+     </p>
+     <div class="ddd">
+          <button>Learn More</button>
+     </div>
+      
+      </div>
+    </div> 
+
+    <div class="part6">
+      
+
+<i class="fa-solid fa-umbrella"></i>
+      <h1> U1/UX Design</h1>
+       <p>
+         
+        Lorem, ipsum dolor sit amet<br> consectetur adipisicing elit. <br›
+      Possimus, nostrum ullam. Aperiam iusto sunt ducimus.<br><br>
+      Lorem ipsum dolor sit amet.<br><br>
+       </p>
+      <button>Learn More</button>
+      
+      
+    </div>
+
+    <div class="part6">
+      <i class="fa-regular fa-address-card"></i>
+      <h1>Graphics Design</h1>
+     
+       <p>
+       Lorem, ipsum dolor sit amet<br> consectetur adipisicing elit. <br›
+      Possimus, nostrum ullam. Aperiam iusto sunt ducimus. <br><br>
+      Lorem ipsum dolor sit amet.<br><br>
+      </p>
+      <button>Learn More</button>
+      
+      
+      
+    </div>
+
+   </div>
+    
+ 
+
+
+ </div>
+ </div>
+
+  
+
+</body>
+</html>

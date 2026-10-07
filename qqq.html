@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dukiya Real Estate</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <style>
+
+        /* =========================
+           GENERAL RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgb(73, 73, 218);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+                "Open Sans", "Helvetica Neue", sans-serif;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           MAIN CONTAINER
+        ========================= */
+
+        .con {
+            width: min(1200px, 94%);
+            margin: 30px auto 0;
+            background-image: url("image/estate.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 650px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            width: 100%;
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 10px 30px;
+            background-color: aliceblue;
+            color: rgb(24, 24, 194);
+            border-radius: 15px;
+        }
+
+        header nav {
+            display: flex;
+            align-items: center;
+        }
+
+
+        /* LOGO */
+
+        .begin img {
+            width: 100px;
+            height: auto;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        .second {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .second a {
+            text-decoration: none;
+            font-weight: 700;
+            color: blue;
+            font-size: 15px;
+            white-space: nowrap;
+        }
+
+        .second a:hover {
+            color: rgb(11, 11, 145);
+        }
+
+
+        /* =========================
+           SEARCH + BUTTON
+        ========================= */
+
+        .third {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .third i {
+            font-size: 18px;
+            color: blue;
+        }
+
+        .third button {
+            width: 95px;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(11, 11, 145);
+            color: white;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           HERO SECTION
+        ========================= */
+
+        .letter {
+            padding: 60px clamp(25px, 8vw, 100px);
+            color: white;
+        }
+
+
+        /* Dukiya title */
+
+        .rrr {
+            margin-bottom: 30px;
+        }
+
+        .rrr i {
+            font-size: 55px;
+            margin-bottom: 5px;
+        }
+
+        .rrr h4 {
+            font-size: clamp(20px, 3vw, 28px);
+            margin-bottom: 3px;
+        }
+
+        .rrr h5 {
+            font-size: clamp(14px, 2vw, 17px);
+        }
+
+
+        /* Hero heading */
+
+        .letter h1 {
+            color: whitesmoke;
+            font-size: clamp(42px, 7vw, 75px);
+            line-height: 0.95;
+            font-weight: 800;
+            margin-bottom: 5px;
+            word-spacing: normal;
+        }
+
+        .letter span h1 {
+            color: rgb(128, 213, 247);
+        }
+
+
+        /* Hero paragraph */
+
+        .letter > p {
+            color: white;
+            font-size: clamp(14px, 1.8vw, 17px);
+            line-height: 1.5;
+        }
+
+
+        /* Hero button */
+
+        .letter > button {
+            margin-top: 25px;
+            width: 180px;
+            min-height: 48px;
+            border-radius: 17px;
+            border: 1px solid white;
+            background-color: rgb(12, 12, 187);
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+
+
+        /* =========================
+           FEATURES
+        ========================= */
+
+        .dodo {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 45px;
+            max-width: 700px;
+        }
+
+        .dodo .one {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            align-items: center;
+            column-gap: 10px;
+        }
+
+        .dodo i {
+            grid-row: span 2;
+            font-size: 38px;
+            color: white;
+        }
+
+        .dodo p {
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           SEARCH BAR
+        ========================= */
+
+        .in {
+            width: 100%;
+            max-width: 850px;
+            min-height: 80px;
+            background-color: rgb(11, 11, 145);
+            margin-top: 50px;
+            padding: 12px;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .on {
+            flex: 1;
+            min-height: 50px;
+            background-color: white;
+            color: black;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 15px;
+            padding: 0 20px;
+        }
+
+        .on p {
+            color: black;
+            border-right: 2px solid rgb(192, 184, 184);
+            padding-right: 15px;
+            font-size: 14px;
+        }
+
+        .on i {
+            color: rgb(11, 11, 145);
+        }
+
+        .ll button {
+            width: 100px;
+            height: 50px;
+            border: none;
+            border-radius: 30px;
+            background-color: rgb(21, 21, 136);
+            color: white;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           SECOND SECTION
+        ========================= */
+
+        .two {
+            width: 100%;
+            min-height: 550px;
+            background-color: white;
+            margin-top: 80px;
+            padding: 70px clamp(25px, 7vw, 90px);
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 60px;
+
+            border-radius: 10px;
+        }
+
+
+        /* Animated image */
+
+        .pic1 {
+            width: 100%;
+            min-height: 300px;
+
+            background-image: url("image/m1.png");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            animation-name: picAnimate;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-delay: 7s;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes picAnimate {
+
+            0% {
+                background-image: url("image/m1.png");
+            }
+
+            30% {
+                background-image: url("image/m2.png");
+            }
+
+            70% {
+                background-image: url("image/m3.png");
+            }
+
+            100% {
+                background-image: url("image/m1.png");
+            }
+        }
+
+
+        /* Text */
+
+        .pic1_txt h1 {
+            color: black;
+            font-size: clamp(25px, 3vw, 38px);
+            margin-bottom: 25px;
+        }
+
+        .pic1_txt p {
+            color: black;
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        .pic1_txt button {
+            margin-top: 15px;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            background-color: rgb(11, 11, 145);
+            color: white;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           ESTATE CARDS SECTION
+        ========================= */
+
+        .three {
+            width: 100%;
+            background-color: rgb(55, 55, 185);
+
+            padding: 80px clamp(20px, 5vw, 70px);
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+
+            border-radius: 10px;
+        }
+
+
+        /* CARD */
+
+        .three .ttt {
+            width: 100%;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .three .ttt:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+
+        /* CARD IMAGE */
+
+        .three img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+
+        /* CARD TEXT */
+
+        .ttt h2 {
+            font-size: 21px;
+            color: black;
+            padding: 18px 20px 5px;
+        }
+
+        .ttt p {
+            color: rgb(117, 107, 107);
+            padding: 5px 20px;
+            font-size: 14px;
+        }
+
+        .ttt button {
+            margin: 15px 20px 25px;
+            width: 120px;
+            height: 40px;
+            border: none;
+            border-radius: 8px;
+            background-color: rgb(11, 11, 145);
+            color: white;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            header {
+                padding: 10px 20px;
+            }
+
+            .second {
+                gap: 12px;
+            }
+
+            .second a {
+                font-size: 13px;
+            }
+
+            .third {
+                gap: 10px;
+            }
+
+            .dodo {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .two {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .pic1 {
+                min-height: 280px;
+            }
+
+            .pic1_txt p {
+                text-align: center;
+            }
+
+            .three {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 600px) {
+
+            body {
+                background-color: rgb(73, 73, 218);
+            }
+
+            .con {
+                width: 100%;
+                margin-top: 0;
+                border-radius: 0;
+            }
+
+
+            /* HEADER */
+
+            header {
+                min-height: auto;
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px;
+                border-radius: 0;
+            }
+
+            .begin img {
+                width: 90px;
+            }
+
+            .second {
+                width: 100%;
+                flex-wrap: wrap;
+                gap: 10px 18px;
+                justify-content: center;
+            }
+
+            .second a {
+                font-size: 13px;
+            }
+
+            .third {
+                justify-content: center;
+            }
+
+
+            /* HERO */
+
+            .letter {
+                padding: 45px 20px;
+            }
+
+            .rrr {
+                text-align: center;
+            }
+
+            .rrr i {
+                font-size: 45px;
+            }
+
+            .rrr h4 {
+                font-size: 22px;
+            }
+
+            .rrr h5 {
+                font-size: 14px;
+            }
+
+            .letter h1 {
+                font-size: clamp(38px, 12vw, 55px);
+            }
+
+            .letter > p {
+                font-size: 14px;
+            }
+
+            .letter > button {
+                width: 160px;
+            }
+
+
+            /* FEATURES */
+
+            .dodo {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                max-width: 300px;
+                margin: 40px auto 0;
+            }
+
+
+            /* SEARCH */
+
+            .in {
+                flex-direction: column;
+                border-radius: 20px;
+                padding: 15px;
+            }
+
+            .on {
+                width: 100%;
+                flex-wrap: wrap;
+                min-height: 55px;
+                padding: 10px;
+            }
+
+            .on p {
+                font-size: 12px;
+            }
+
+            .ll {
+                width: 100%;
+            }
+
+            .ll button {
+                width: 100%;
+            }
+
+
+            /* SECOND SECTION */
+
+            .two {
+                margin-top: 50px;
+                padding: 50px 20px;
+                gap: 30px;
+            }
+
+            .pic1 {
+                min-height: 220px;
+            }
+
+            .pic1_txt h1 {
+                font-size: 27px;
+            }
+
+            .pic1_txt p {
+                font-size: 14px;
+                text-align: left;
+            }
+
+
+            /* ESTATE CARDS */
+
+            .three {
+                grid-template-columns: 1fr;
+                padding: 50px 20px;
+                gap: 25px;
+            }
+
+            .three img {
+                height: 220px;
+            }
+
+        }
+
+
+        /* =========================
+           VERY SMALL PHONES
+        ========================= */
+
+        @media (max-width: 380px) {
+
+            .second a {
+                font-size: 12px;
+            }
+
+            .letter {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .letter h1 {
+                font-size: 36px;
+            }
+
+            .on {
+                gap: 8px;
+            }
+
+            .on p {
+                padding-right: 8px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <div class="con">
+
+        <!-- ================= HEADER ================= -->
+
+        <header>
+
+            <nav>
+                <div class="begin">
+                    <img src="image/dukiya.png" alt="Dukiya Real Estate">
+                </div>
+            </nav>
+
+
+            <nav>
+                <div class="second">
+                    <a href="#">Home</a>
+                    <a href="#">Fuld</a>
+                    <a href="#">Real Estate</a>
+                    <a href="#">Counch</a>
+                </div>
+            </nav>
+
+
+            <nav>
+                <div class="third">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button>Get Touch</button>
+                </div>
+            </nav>
+
+        </header>
+
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="letter">
+
+            <div class="rrr">
+
+                <i class="fa-solid fa-house-chimney"></i>
+
+                <h4>Dukiya Real Estate</h4>
+
+                <h5>
+                    Land . Properties . Investment
+                </h5>
+
+            </div>
+
+
+            <h1>Find Your</h1>
+            <h1>Dream Home</h1>
+
+            <span>
+                <h1>With Ease</h1>
+            </span>
+
+
+            <p>Quality home prime locations</p>
+            <p>and trusted real estate solutions.</p>
+
+
+            <button>Dukiya Estate</button>
+
+
+            <!-- FEATURES -->
+
+            <div class="dodo">
+
+                <div class="one">
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                    <div>
+                        <p>Verified</p>
+                        <p>Properties</p>
+                    </div>
+
+                </div>
+
+
+                <div class="one">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <div>
+                        <p>Flexible</p>
+                        <p>Payment Plan</p>
+                    </div>
+
+                </div>
+
+
+                <div class="one">
+
+                    <i class="fa-regular fa-handshake"></i>
+
+                    <div>
+                        <p>Trusted</p>
+                        <p>Investment</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SEARCH -->
+
+            <div class="in">
+
+                <div class="on">
+
+                    <p>Berling Estate</p>
+
+                    <p>Denmark</p>
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <i class="fa-solid fa-house-chimney"></i>
+
+                </div>
+
+
+                <div class="ll">
+
+                    <button>Estates</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ABOUT SECTION ================= -->
+
+        <section class="two">
+
+            <div class="pic1"></div>
+
+
+            <div class="pic1_txt">
+
+                <h1>
+                    Welcome to Berling Estate
+                </h1>
+
+
+                <p>
+                    It’s a location with development potential,
+                    and you have different plot sizes to choose
+                    from depending on your budget and investment plans.
+                </p>
+
+
+                <p>
+                    Whether you’re buying land to build your home,
+                    hold for future appreciation, or secure a property,
+                    the important thing is to make sure you’re buying
+                    a properly verified property.
+                </p>
+
+
+                <button>
+                    More
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ESTATES ================= -->
+
+        <section class="three">
+
+
+            <div class="ttt">
+
+                <img src="image/blue2.png" alt="Ontario Estates">
+
+                <h2>
+                    Ontario Estates
+                </h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet.
+                </p>
+
+                <button>
+                    Agent Cards
+                </button>
+
+            </div>
+
+
+
+            <div class="ttt">
+
+                <img src="image/frank.png" alt="Frankfurt Estates">
+
+                <h2>
+                    Frankfurt Estates
+                </h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet.
+                </p>
+
+                <button>
+                    Agent Cards
+                </button>
+
+            </div>
+
+
+
+            <div class="ttt">
+
+                <img src="image/berling.png" alt="Berling Estates">
+
+                <h2>
+                    Berling Estates
+                </h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet.
+                </p>
+
+                <button>
+                    Agent Cards
+                </button>
+
+            </div>
+
+
+        </section>
+
+    </div>
+
+</body>
+</html>
