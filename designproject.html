@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        header{
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+           header{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -27,6 +34,7 @@
              
             margin-left: 19px;
             text-decoration: none;
+            color: black;
             
         }
         .container{
@@ -36,9 +44,14 @@
         }
 
 
-
-
-
+ /* git config --global user.name "Olami888"
+ git config --global user.email "ibrahimolami8@gmail.com"
+ git config --global user.email "you@example.com"
+ git init 
+  git add .
+   git status
+   git commit -m "initial commit"
+  git push -u origin main */
 
             /* .third{
             background-image:url('image/18.png');
@@ -52,27 +65,8 @@
             animation-iteration-count: infinite;
             animation-delay: 7s;
             animation-timing-function: ease-in; */
-        } */
-         /* @keyframes picAnimate{
-              /* from{
-                     background-image: url('image/blue.png');
-              }
-              to{
-                      background-image: url('image/ppp.png');
-              } */
-
-            /* 0%{
-               background-image: url('image/18.png');
-            } 
-            30%{
-                background-image: url(image/17.png);
-            }
-           70%{
-                background-image: url(image/16.png);
-            }
-            
-        } */ */
-
+        } 
+        
 
 
 
@@ -84,64 +78,544 @@
         }
         .sec1{
             width: 90%;
-            height: 90vh;
+            height: 104vh;
             background-color:orangered;
             border-radius: 10px;
             margin-left: 59px;
+
         }
 
         .first h2{
          position: relative;
          top: 100px;
          left:40px;
-            font-size: 38px;
+            font-size: 43px;
             margin-left: 35px;
-            line-height: 0.5;
-
+            line-height: 1.0;
+            color: white;
+            z-index: 2;
         }
 
          .first p{
          position: relative;
-         top: 100px;
+         top: 115px;
          left:40px;
-            /* font-size: 38px; */
+            font-size: 15px;
             margin-left: 35px;
             /* line-height: 0.5; */
-
+            z-index: 2;
+          color: white;
         }
 
          .first button{
          position: relative;
-         top: 100px;
+         top: 120px;
          left:40px;
+         width: 16%;
+         height: 36px;
+         border: none;
+         margin-top: 10px;
+         border-radius: 5px;
+
             /* font-size: 38px; */
             margin-left: 35px;
             /* line-height: 0.5; */
 
         }
+         
+
+         @keyframes picAnimate{
+              /* from{
+                     background-image: url('image/blue.png');
+              }
+              to{
+                      background-image: url('image/ppp.png');
+              } */
+
+            0%{
+               background-image: url(image/17pm.png);
+            } 
+            30%{
+                background-image: url(image/17pm.png);
+            }
+           70%{
+                background-image: url(image/16.png);
+            }
+            100%{
+               
+                background-image: url(image/16.png);
+            
+            }
+        }
+
+
+
+        .bola{
+             background-image: url(image/17pm.png);
+              width: 52%;
+            height: 99%;
+             position: relative;
+            left: 48%;
+            top: -45%;
+             background-repeat: no-repeat; 
+            animation-name: picAnimate;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-delay: 7s;
+            animation-timing-function: ease-in; 
+             z-index: 1;
+             background-color: rgba(192, 54, 4, 0.408);
+             border-radius: 50%;
+             display: flex;
+             text-align: center;
+        }
 
         .second{
-            width: 45%;
-            height: 100%;
+           
+            width: 52%;
+            height: 99%;
             border-radius: 50%;
             background-color:rgb(212, 57, 0);
-            z-index: 1;
+        
+           
+
+        }
+       
+        .second img{
             position: relative;
-            left: 55%;
-            top: -50%;
+            bottom: 60px;
+            width: 98%;
+            left: 10px;
+    
         }
-        .third img{
-            width: 30px;
-            height: 30px;
-            z-index: 1;
+        
+        .photo{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+
+        .photo .pht1 img{
+             width: 194%;
+             height: 466px;
+             position: relative;
+             left: 20%;
+             margin-top: 70px;
+             border-radius: 7px;
         }
 
+          .pht2 img{
+             
+             width: 53%;
+             margin-left: 41%;
+             margin-top: 120px;
+             position: relative;
+             top: 37px;
+             border-radius: 7px;
+            
+        }
+        .pht2 img:first-child {
+          margin-top: 0;
+          
+              
+        } 
+        .pht2 img:last-child {
+          margin-top: 5px;
+              
+              
+        } 
+        
+        .picture{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .img1 img, .img2 img, .img3 img{
+            width: 73%;
+            height: 60%;
+            border-radius: 7px;
+            position: relative;
+            left: 70px;
+            margin-top: 50px;
+        }
+        
+        .img1 h2, .img2 h2, .img3 h2{
+            font-size: 30px;
+            margin-top: 10px;
+            margin-left: 130px;
+            
+        }
+
+        .img1 p, .img2 p, .img3 p{
+            font-size: 10px;
+            margin-top: 10px;
+            margin-left: 60px;
+            text-align: center;
+
+        }
+        .img2 p{
+            margin-right: 5px;
+        }
+        .img1 h2{
+          padding-left: 10px;
+        }
+
+        .img3{
+            width: 50%;
+            height: 40%;
+
+        }
+        .last{
+            display: flex;
+            flex-direction: row;
+            background-color: orangered;
+            width: 90%;
+            height:230px;
+            margin-left: 50px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            margin-top: 50px;
+            
+        }
+
+        .one h1{
+        position: relative;
+        top: 37px;
+    
+          font-size: 30px;
+          margin-left: 18%;
+         color: white;
+        }
+        .one p{
+        
+           font-size: 15px;
+            margin-left: 18%;
+            position: relative;
+            top: 55px;
+            color: rgba(255, 255, 255, 0.689);
+
+        }
+     
+        .two button{
+            width: 110%;
+            height: 45px;
+            border-radius: 10px;
+            border: none;
+            position: relative;
+            top: 93px;
+            left: 367%;
+        }
+       
+      .footer1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: black;
+        color: white;
+        height: 190px;
+        align-items: center;
+        position: relative;
+        z-index: -2;
+        bottom: 60px;
+        margin-bottom: -60px;
+       
+
+        
+        
+      }
+
+      .f2 a{
+        margin-left: 20px;
+        text-decoration: none;
+        color: white;
+      }
+
+      .footer2 {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         background-color: black;
+         color: white;
+           height: 150px;
+           align-items: center;
+         
+
+         
+    
+      }
+      footer{
+        position: relative;
+      }
+
+       
+  .footer2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 60%;
+    border-top: 1px solid white;
+    
+}
+
+   .f5 i{
+      margin-left: 10px;
+      color:rgb(212, 57, 0) ;
+      
+   }
+
+   @media screen and (max-width: 768px){
+     
+     .container h1{
+        font-size: 20px;
+        margin-left: 60px;
+     }
+   
+
+     .con2 a{
+       font-size: 8px;
+     position: relative;
+     right: 140px;
+     }
+
+     .bola {
+         width: 130%;
+            height: 45%;
+            left: -35px;
+            top: 220px;
+        background-color: rgba(222, 92, 45, 0.416);
+
+   
+} 
+        .sec1{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            right: 20px;
+
+            
+        }
+        .first h2{
+            text-align: center;
+            font-size: 25px;
+            margin-right: 120px;
+        }
+         .first p{
+            margin-top: 10px;
+             text-align: center;
+            font-size: 15px;
+            margin-right: 120px;
+         }
+
+          .first button{
+             width: 29%;
+             height: 38px;
+             margin-top: 30px;
+             margin-left: 25%;
+
+          }
+          .photo{
+              display: flex;
+              flex-direction: column;
+              position: relative;
+              right: 20px;
+          }
 
 
+        .photo .pht1 img{
+             width: 73%;
+             height: 240px;
+             position: relative;
+             left: 20%;
+             margin-top: 70px;
+             border-radius: 7px;
+            
+        }
+
+         .pht2 img{
+             width: 70%;
+             height: 235px;
+              position: relative;
+             right:20%;
+             margin-bottom: 30px;
+
+         }
+       .picture{
+         display: flex;
+         flex-direction: column;
+         position: relative;
+         right: 30px;
+       }
+        
+      .img1 img{
+         position: relative;
+         left: 95px;
+      }
+      .img1 h2{
+        
+        position: relative;
+        left: 44px;
+      }
+
+       .img1 p{
+       font-size: 73%;
+      }
+
+      .img2 img{
+        width: 110%;
+       padding-right: 24%;
+      }
+
+       .img2 h2{
+        
+        position: relative;
+        left: 44px;
+      }
+
+       .img2 p{
+       font-size: 73%;
+      }
+     
 
 
+        .img3 img{
+        width: 184%;
+        margin-left: -29px;
+       
+      }
+
+       .img3 h2{
+        
+        position: relative;
+        left: 44px;
+      }
+
+        .img3 p{
+       /* font-size: 100%;
+     
+     text-align: center; */
+      position: relative;
+      left: 30px;
+      font-size: 75%;
+      /* background-color: blue; */
+      width: 140%;
+      height: 10px;
+      line-height: -100%;
+       margin-top: 20px;
+      }
+      
+
+      .last{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height:350px;
+        position: relative;
+        left: 20px;
+      }
+
+      
+       .two button{
+         margin-right: 100%;
+         color: black;
+         align-items: center;
+         width: 100px;
+         height: 55px;
+         position: relative;
+          left: 35%;
+      }
+
+      .one h1, .one p{
+         text-align: center;
+         position: relative;
+         right: 10%;
+      }
+
+      .footer1{
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+        position: relative;
+        bottom: 190px;
+
+      }
+        .f1{
+            position: relative;
+        top: 140px;
+        right:5px;
+      
+        }
+
+      .f2{
+         display: flex;
+        flex-direction: column;
+        line-height: 70px;
+        align-items: center;
+        font-size: 16px;
+        position: relative;
+        top: 40px;
+        right:20px ;
+      }
+
+        .footer2{
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+        position: relative;
+        bottom: 140px;
+        
+
+      }
+      .general{
+        position: relative;
+        right:53px;
+      }
+    .f5 i{
+       font-size: 40px;
+       color: orangered;
+       z-index: 7;
+       position: relative;
+       bottom: 30px;
+       font-size: 25px;
+       margin-left: 20px;
+    }
+
+      .f3 p{
+        text-align: center;
+        font-size:15px ;
+        margin-top: 10px;
+      }
+       .f3 h2{
+           font-size: 23px;
+       }
+
+
+      .f4 p{
+          text-align: center;
+          margin-bottom: 4px;
+          margin-top: 10px;
+          font-size: 18px;
+      }
+      .f4 h2{
+         font-size: 23px;
+      }
+      .bola{
+
+      }
+
+}
+
+
+       
 
     </style>
+    <link rel="stylesheet"
+
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <header>
@@ -171,25 +645,116 @@
 
            <button>LEARN MORE</button>
         </div>
-        <div class="second"></div>
 
+        <div class=" bola"></div>
+       
 
-        <div class="third" >
-             <img src="image/18pm.png" alt=""> 
-        </div>
-
+        
     </div>
   
-
-
-
-
-
+   <div class="photo">
+    <div class="pht1">
+        <img src="image/web.png" alt="">
     </div>
 
-
-
-
+    <div class="pht2">
+           <img src="image/ppa.png" alt="">
+           <img src="image/gra.png" alt="">
+        </div>
+        
     </div>
+     <div class="picture">
+
+        <div class="img1">
+        <img src="image/boy.png" alt="">
+         <h2>passionate</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui?</p>
+         <p>Lorem ipsum dolor sit amet consecte</p>
+       </div>
+
+        <div class="img2">
+        <img src="image/girl.png" alt="">
+         <h2>passionate</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui?</p>
+         <p>Lorem ipsum dolor sit amet consecte</p>
+       </div>
+         
+       <div class="img3">
+        <img src="image/boigir.png" alt="">
+         <h2>passionate</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui?</p>
+         <p>Lorem ipsum dolor sit amet consecte</p>
+       </div>
+        
+
+     </div>
+       <div class="last">
+        <div class="one">
+            <h1>Let talk about </h1>
+            <h1>your project</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et natus, iure,</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+         <div class="two">
+            <button>GET IN TOUCH</button>
+         </div>
+       </div> 
+       <footer class="footer1">
+        <div class="f1">
+             <h1>DESIGNO</h1>
+        </div>
+        <div class="f2">
+            <a href="" >OUR COMPANIES</a>
+            <a href="" >LOCATION</a>
+            <a href="" >CONTACT</a>
+        </div>
+          
+
+       </footer>
+
+
+       <footer class="footer2">
+        <div class="f3">
+             <h2>Designo central Office</h2>
+             <p>Designo central Office</p>
+             <p>Designo central Office</p>
+        </div>
+        <div class="f4">
+           <h2>Contact Us (Central office)</h2>
+           <p>+1234-8168985782</p>
+           <p>Contact us on Designo@gmail.com</p>
+        </div>
+         <div class="f5">
+           <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+         <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+         </a>
+
+        <a href="https://x.com/" target="_blank" aria-label="X (Twitter)">
+        <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="https://www.pinterest.com/" target="_blank" aria-label="Pinterest">
+        <i class="fa-brands fa-pinterest-p"></i>
+        </a>
+
+        <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+        </a> 
+        </div>
+          
+
+       </footer>
+    </div>
+    
 </body>
 </html>
